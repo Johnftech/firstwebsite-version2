@@ -1,0 +1,173 @@
+/* psuedo-classes */
+a:link { color: #98C1D9; }
+a:visited { color: #3D5A80; }
+a:hover { color: #EE6C4D; }
+a:active { color: #E0FBFC; }
+
+body  {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  background-color: #E0FBFC;
+  color: #293241;
+  margin: 24px;
+  text-align: justify;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+}
+/* background, color, font-family, font-size,
+height, margin, padding, text-align */
+header {
+  background-color: #98C1D9;
+  margin-bottom: 30px;
+}
+
+img {
+  width: 100%;
+  flex-shrink: 5;
+}
+
+/* navigation*/
+.topnav {
+  display: flex;
+  padding: 15px;
+  justify-content: center;
+  background-color: #293241;
+}
+
+header nav ul {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 20px 5px 20px;
+}
+
+h3 {
+	color: #3D5A80;
+	font-style: italic;
+	font-size: 21px;
+}
+/* top of page */ 
+#who {
+  flex-wrap: wrap;
+}
+
+main {
+  padding: 25px 0;
+}
+
+h4 {
+  font-size: 20px;
+	font-style: italic;
+	font-weight: 100;
+	padding: 30px;
+  opacity: .8;
+
+}
+
+h1 { 
+	font-weight: 200;
+	font-size: 30px;
+  text-align: center;
+}
+
+.vegan {
+  padding: 20px;
+  background-color: #293241;
+  align-self: auto;
+}
+
+.vegan p {
+  color: #98C1D9;
+}
+
+
+/*main */
+article {
+  justify-content: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+
+/* footer */
+footer {
+  flex-direction: row; 
+}
+
+
+.contact {
+  display: flex;
+	font-size: 20px;
+}
+
+
+
+/*mobile first*/
+@media all and (min-width: 600px) {
+  header {
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+  header h1 {
+    font-size: 40px;
+    margin: 14px 0;
+    padding-top: 0;
+  }
+  section {
+    flex-direction: column;
+  }
+
+  body {
+    font-size: 24px;
+  }
+
+  .topnav {
+    text-align: left;
+    margin-top: 8px;
+  }
+
+  header nav ul li a:hover {
+    color: #EE6C4D;
+  }
+
+  img {
+    flex: display;
+  }
+}
+
+button:hover { 
+  color: #EE6C4D; 
+}
+
+form {
+  padding-right: 6px;
+  display: flex;
+  padding: 15px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+form input, 
+form textarea {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+form textarea {
+  height: 160px;
+}
+
+
+button {
+  display: flex;
+  justify-content: center;
+  padding: 14px;
+  font-size: 18px;
+  border-radius: 2px;
+  background-color: 
+}
