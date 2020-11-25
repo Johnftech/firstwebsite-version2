@@ -68,6 +68,11 @@ header article {
 }
 
 /* top of page */ 
+p {
+  font-family: Helvetica, sans-serif;
+  color: #293241;
+  font-style: normal;
+}
 
 .text-align {
   display: flex;
@@ -78,6 +83,8 @@ header article {
   padding: 33px;
 
 }
+
+
 
 h3 {
 	color: #3D5A80;
