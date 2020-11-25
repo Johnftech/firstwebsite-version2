@@ -84,12 +84,25 @@ p {
 
 }
 
-
-
 h3 {
 	color: #3D5A80;
 	font-style: italic;
 	font-size: 23px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 200px;
+  margin: 20px;
+  margin-bottom: 0;
+
+}
+
+.contact ul li a {
+  align-items: center;
+  margin-left: 0;
 }
 
 h4 {
@@ -99,8 +112,6 @@ h4 {
 	padding: 30px;
   opacity: .8;
 }
-
-
 
 ul {
   list-style: none;
@@ -148,11 +159,6 @@ main section ul li::before {
   color: #E0FBFC;
 }
 
-h4.talk {
-  font-weight: 200px;
-  margin-bottom: 0;
-}
-
 .vegan {
   padding: 20px;
   background-color: #293241;
@@ -180,23 +186,9 @@ footer {
   flex-direction: column;
 }
 
-.contact {
-  display: flex;
-  flex-direction: column;
-  font-size: 20px;
-  margin-bottom: 25px
-}
-
-
 button:hover { 
   color: #EE6C4D; 
 }
-
-
-
-
-
-
 
 /* psuedo-classes */
 a:link { color: #98C1D9; }
@@ -267,18 +259,6 @@ button {
   font-size: 18px;
   border-radius: 2px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*mobile first*/
 
