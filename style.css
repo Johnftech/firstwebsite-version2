@@ -18,7 +18,7 @@ header {
 .topnav {
   display: flex;
   justify-content: center;
-  background-color: orange; /*background-color: #293241;*/
+  background-color: #98C1D9;
   margin-bottom: 20px;
   /*border-radius: 10px 10px 0 0 ;*/
 }
@@ -137,7 +137,7 @@ main section ul li::before {
 .callout {
   background-color: #98C1D9;
   padding: 10px;
-  margin: 0 5px;
+  margin: 0;
   color: #E0FBFC;
 }
 
@@ -247,8 +247,8 @@ form input[type=text], form input[type=email] {
   margin-bottom: 25px;
 }
 
-form input[type=text]#name, #email {
-  width: 20px;
+form input[type=text]#name-input, #email-input {
+  width: 200px;
 }
 
 button {
