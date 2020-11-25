@@ -11,50 +11,53 @@
 <body>
 	<!-- top of page -->
 	<header>
-			<nav class="topnav">
+		<nav >
+      <div class="topnav">
         <ul>
           <li><a href="#who">Who am I?</a></li>
-          <li><a href="#about-me">About Me</a></li>
           <li><a href="#contact">Contact</a></li> 
         </ul>
-			</nav>
+      </div>
+		</nav>
 		
-
-
-		<div>
-			<img class="top-img" src="images/john-tree.jpg" alt="Johnathon Flores smiling with trees in background"/>
-    </div>
-      
-    <div>
-      <h1 class="who"><strong>Hi, I'm John Flores</strong></h1>
-    </div>
+    <article>
+      <div>
+        <img class="top-img" src="images/john-tree.jpg" alt="Johnathon Flores smiling with trees in background"/>
+      </div>
+          
+      <div>
+        <h1 id="who"><strong>Hi, I'm John Flores</strong></h1>
+      </div>
     </article>
   </header>
     <!-- end of top of page -->
 
     <!--middle of page-->
     <!-- intro section and bio -->
-  <main class="wrap">
+  <main>
     <article>
-      <section class="text-align" id="about-me">
-        <h3>
+      <section id="about-me">
+        <div class="text-align">
+          <h3>
           I'M A VEGAN WEB DEVELOPER WHO IS BASED IN LOS ANGELES WHO LOVES TO TRAVEL, KICK ASS AND SAVE ANIMALS.
         </h3>
+        </div>
+        
       </section>
       
-      <section class="text-align">
-        <div>
+      <section>
+        <div class="text-align">
           <p>Having web development in my arsenal enables me to scale my business, showcase my skill sets, and collaborate with others on fun projects.
           </p>
           <p>I can provide web services in the areas of web development, app building, and project direction.</p>
         </div>
       </section>
       <!--passion-->
-      <section class="text-align">
-        <h3>
-        My passions include:
-        </h3>
-        <div>
+      <section>
+        <div class="text-align">
+          <h3>
+            My passions include:
+          </h3>
           <ul>
             <li>When I am not coding, I like to educate others about aligning their beliefs with their actions.</li>
             <li>I also have a strong interest in veganic agriculture. I started my own little garden with the goal of growing most of my food.
@@ -65,47 +68,93 @@
       </section>
     </article>
 
-    <article>
-      <h3>Projects</h3>
-      <section class="text-align">
-        <div class="listing">
-          <p>Projects are in the works</p>
-          <ul>
-            <li>Project A
-              <ul>
-                <li>This explains what the app does and who it is for
-                  <ul>
-                    <li>Link to repo</li>
-                    <li>Link to working app</li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-          </ul>
+    <article class="callout">
+      <div class="text-align">
+        <h3>Projects</h3>
+        <p>Projects are in the works</p>
+      </div>
+
+      <section > 
+        <div class="project-group">
+          <div class="project">
+            <img src="#" alt="Project A">
+            <h4>Project A</h4>
+            <p>PLACEMENT TEXT: This explains what the app does and who it is for</p>
+            <h5>Tech Stack:</h5>
+            <ul>
+              <li>JavaScript</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul> 
+            <div class="project-links">
+              <a href="#">Link to repo</a>
+              <a href="#">Link to working app</a>
+            </div>
+          <div>
         </div>
+      </section>
 
+      <section>
+        <div class="project-group">
+          <div class="project">
+            <img src="#" alt="Project B">
+            <h4>Project B</h4>
+            <p>PLACEMENT TEXT: This explains what the app does and who it is for</p>
+            <h5>Tech Stack:</h5>
+           <ul>
+              <li>JavaScript</li>
+              <li>Node.js</li>
+              <li>React</li>
+            </ul> 
+            <div class="project-links">
+              <a href="#">Link to repo</a>
+              <a href="#">Link to working app</a>
+            </div> 
+          </div>   
+        </div>
+      </section>
 
+      <section>
+        <div class="project-group">
+          <div class="project">
+            <img src="#" alt="Project C">
+            <h4>Project C</h4>
+            <p>PLACEMENT TEXT: This explains what the app does and who it is for</p>
+            <h5>Tech Stack:</h5>
+            <ul>
+              <li>JavaScript</li>
+              <li>Node.js</li>
+              <li>PostgreSQL</li>
+            </ul> 
+            <div class="project-links">
+              <a href="#">Link to repo</a>
+              <a href="#">Link to working app</a>
+            </div>       
+          </div>
+        </div>
       </section>
     </article>
-
 
   </main>
     <!---->
   <hr>
-
     <!--contact section-->
     <!--footer-->
   <footer>
-    <article>
-      <section id="contact" class="text-align">
-        <div>
-          <h4>Let's talk code!</h4>
-        </div>
 
-        <div class="contact">
+    <article>
+      <section class="contact" id="contact" >
+        <div>
+          <h4 class="talk">Let's talk code!</h4>
+        </div>
+        <!--stylize with psuedo classes -->
+        <!--target="_blank"-->
+        <div >
           <ul>
             <li><a href="http://linkedin.com/in/johnathonflores" alt="link to Linked In" target="_blank">LinkedIn</a></li>
             <li><a href="https://github.com/Johnftech" alt="link to GitHub" target="_blank" >GitHub</a></li>
+            <li><a href="mailto:johnf.la.tech@gmail.com" alt="Email" target="_blank">Email</a></li>
+
           </ul>
         </div>
       </section>
@@ -113,29 +162,33 @@
       <section>
         <div class="form">
           <form action="https://formspree.io/f/xqkglozp" method="POST">
-            <label for="name-input">Your name: 
-            </label><input id="name-input" type="text" name="name">
-            <label for="email-input">Your email:</label><input id="email" type="text" name="_replyto" autofocus="on" required>
-            <label for="message-input">Your message: 
-            </label><textarea id="message-input" name="message-input"></textarea required>
-            <!-- your other form fields go here -->
-            <button type="submit">Send</button>
+            <fieldset>
+              <legend>Send me an email</legend>
+              <label for="name-input">Your name:</label>
+              <input id="name-input" type="text" name="name" placeholder="Enter your full name" required>
+              <label for="email-input">Your email:</label>
+              <input id="email-input" type="email" name="email"pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Enter your email" required>
+              <input type="hidden" name="_subject" value="Email from GitHub portfolio" />
+              <div>
+                <label for="message-input">Your message:</label>
+                <textarea id="message-input" name="message-input" maxlength="175" placeholder="What are you looking to get coded?" required></textarea >
+                  <!-- other form fields go here -->
+                <button type="submit">Send</button>
+              </div>
+            </fieldset>
           </form>
         </div>
       </section>
     </article>
 
-    <section class="vegan">
-      <div>
+    <section >
+      <div class="vegan">
          <p>Live vegan, be vegan.</p>
       </div>
     </section>
   </footer>
-    <!--stylize with psuedo classes -->
-    <!--linkedin-->
-    <!--github-->
     <!---->
-    <!--target="_blank"-->
+    
     <!-- end of contact section-->
   <script src="script.js"></script>
 </body>
