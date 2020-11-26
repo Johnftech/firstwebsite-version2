@@ -334,15 +334,15 @@ button {
 
   }
 
-
   .project-group {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
   }
 
   .project {
-    width: 32%;
+    width: 33%;
     padding-bottom: 18%;
     margin-bottom: 2%;
   }
