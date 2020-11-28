@@ -99,7 +99,7 @@ h3 {
 	font-size: 23px;
 }
 
-.contact {
+.contact.talk {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -143,6 +143,10 @@ main section ul li::before {
   padding: 0 15px 15px;
 }
 
+main div a {
+  color:#3D5A80; 
+}
+
 .project-group img {
   width: 100%;
 }
@@ -160,7 +164,7 @@ main section ul li::before {
 
 .project-links a {
   margin-right: 25px;
-  color: #3D5A80;
+  /*color:#3D5A80;*/
 }
 
 .vegan {
@@ -191,9 +195,9 @@ hr {
   list-style: none;
   padding-left: 0;
 }
-.contact-links ul li a {
+.contact-links a {
   align-content: center;
-  line-height: 30px;
+  line-height: 40px;
   color: #3D5A80;
 }
 
@@ -268,7 +272,11 @@ button {
 
 /*mobile first*/
 
+
+/* psuedo-classes */
+  
 @media all and (min-width: 600px) {
+  
   body {
     font-size: 24px;
   }
@@ -331,11 +339,10 @@ button {
     flex-basis: 100%;
   }
 
-  .talk {
-    flex-grow: 2;
-  }
+  /*.contact.talk h4 {
+    
+  }*/
 
-  /* psuedo-classes */
   a:link { color: #98C1D9; }
   a:visited { color: #3D5A80; }
   a:hover { color: #EE6C4D; }
