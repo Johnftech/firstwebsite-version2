@@ -104,14 +104,8 @@ h3 {
   flex-direction: column;
   align-items: center;
   font-weight: 200px;
-  margin: 20px;
+  margin: 15px;
   margin-bottom: 0;
-
-}
-
-.contact ul li a {
-  align-items: center;
-  margin-left: 0;
 }
 
 h4 {
@@ -132,7 +126,7 @@ section div a {
 
 .callout {
   background-color: #98C1D9;
-  padding: 15px;
+  padding: 33px;
   margin: 0;
   color: #E0FBFC;
 }
@@ -166,9 +160,8 @@ main section ul li::before {
 
 .project-links a {
   margin-right: 25px;
+  color: #3D5A80;
 }
-
-
 
 .vegan {
   padding: 20px;
@@ -189,27 +182,24 @@ hr {
   background-color: #EE6C4D;
 	border: #EE6C4D 1px solid ;
 	margin-top: 50px;
-	margin-bottom: 0px;
+  margin-bottom: 0px;
 }
 /* footer */
-.contact {
-  display: flex;
-  flex-direction: column;
-}
+
+
 .contact ul {
   list-style: none;
   padding-left: 0;
 }
-.contact-links {
+.contact-links ul li a {
   align-content: center;
+  line-height: 30px;
+  color: #3D5A80;
 }
-
-
 
 button:hover { 
   color: #EE6C4D; 
 }
-
 
 
 /* form */
@@ -323,11 +313,7 @@ button {
     margin-top: 0;
   }
 
-  main section {
-    flex-direction: row;
-    margin: 15px;
-    padding: 15px;
-  }
+ 
   .project-group {
     display: flex;
     flex-direction: row;
@@ -339,6 +325,14 @@ button {
     width: 33%;
     padding-bottom: 18%;
     margin-bottom: 2%;
+  }
+
+  .project-links {
+    flex-basis: 100%;
+  }
+
+  .talk {
+    flex-grow: 2;
   }
 
   /* psuedo-classes */
