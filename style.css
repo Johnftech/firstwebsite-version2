@@ -79,6 +79,7 @@ main img {
 p {
   font-family: Helvetica, sans-serif;
   color: #293241;
+  flex-shrink: inherit;
   font-style: normal;
 }
 
@@ -131,7 +132,7 @@ section div a {
 
 .callout {
   background-color: #98C1D9;
-  padding: 10px;
+  padding: 15px;
   margin: 0;
   color: #E0FBFC;
 }
@@ -209,11 +210,7 @@ button:hover {
   color: #EE6C4D; 
 }
 
-/* psuedo-classes */
-a:link { color: #98C1D9; }
-a:visited { color: #3D5A80; }
-a:hover { color: #EE6C4D; }
-a:active { color: #E0FBFC; }
+
 
 /* form */
 .form {
@@ -310,12 +307,6 @@ button {
     color: #EE6C4D;
   }
 
-  main article section {
-    flex-direction: row;
-    margin: 15px;
-    padding: 15px;
-  }
-
   .top-group {
     flex-direction: row;
     align-content: flex-start;
@@ -330,10 +321,13 @@ button {
   
   .top-2.about-me > h2 {
     margin-top: 0;
-
-
   }
 
+  main section {
+    flex-direction: row;
+    margin: 15px;
+    padding: 15px;
+  }
   .project-group {
     display: flex;
     flex-direction: row;
@@ -346,4 +340,10 @@ button {
     padding-bottom: 18%;
     margin-bottom: 2%;
   }
+
+  /* psuedo-classes */
+  a:link { color: #98C1D9; }
+  a:visited { color: #3D5A80; }
+  a:hover { color: #EE6C4D; }
+  a:active { color: #E0FBFC; }
 }
